@@ -1,4 +1,4 @@
-# Dog-food-shop
+# Dog food shop
 Dog Food Store – HTML &amp; CSS Responsive Website
 # 🐾 Dog Food Shop
 
