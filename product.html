@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dog Food Products</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: url("group.jpg") no-repeat center center fixed;
+      background-size: cover;
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
+
+    #products {
+      background: rgba(255, 255, 255, 0.6);
+      padding: 20px;
+      margin: 30px;
+      border-radius: 10px;
+
+      display: grid;
+      grid-template-columns: repeat(2, 1fr); 
+      gap: 20px;
+    }
+
+    article {
+      padding: 15px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-height: 380px; 
+      text-align: center;
+      
+    }
+
+    article img {
+      width: 180px;
+      height: 180px;
+      object-fit: contain;
+      margin-bottom: 10px;
+    }
+
+    
+    .price {
+      color: #000;
+      font-weight: bold;
+    }
+
+   
+    article h3 {
+      color: #000;
+      font-weight: bold;
+    }
+
+    button {
+      background: #ffcc66;
+      border: none;
+      padding: 8px 12px;
+      border-radius: 5px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background: #ff9900;
+    }
+
+    input[type="number"], select {
+      padding: 6px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      margin: 5px 0;
+    }
+
+    h2 {
+      grid-column: span 2; 
+      text-align: center;
+    }
+
+  </style>
+</head>
+<body>
+  
+  <section id="products">
+    <h2>Dog Food Products</h2>
+
+    <article>
+      <img src="food.jpg" alt="Premium Chicken Kibble Bag">
+      <h3>Premium Chicken Kibble</h3>
+      <p class="price">Price: $20</p>
+      <label for="product1">Choose Size:</label>
+      <select id="product1">
+        <option value="2kg">2kg - $15</option>
+        <option value="5kg">5kg - $30</option>
+        <option value="10kg">10kg - $55</option>
+      </select>
+      <form>
+        <label for="qty1">Qty:</label>
+        <input type="number" id="qty1" value="1" min="1">
+        <button type="submit">Add to Cart</button>
+      </form>
+    </article>
+
+    <article>
+      <img src="food_1.png" alt="Beef & Rice Mix">
+      <h3>Beef & Rice Mix</h3>
+      <p class="price">Price: $25</p>
+      <label for="product2">Choose Flavor:</label>
+      <select id="product2">
+        <option value="2kg">2kg - $15</option>
+        <option value="5kg">5kg - $30</option>
+        <option value="10kg">10kg - $55</option>
+      </select>
+      <form>
+        <label for="qty2">Qty:</label>
+        <input type="number" id="qty2" value="1" min="1">
+        <button type="submit">Add to Cart</button>
+      </form>
+    </article>
+
+    <article>
+      <img src="food_1.png" alt="Grain-Free Salmon Pack">
+      <h3>Grain-Free Salmon Pack</h3>
+      <p class="price">Price: $30</p>
+      <label for="product3">Choose Pack:</label>
+      <select id="product3">
+        <option value="2kg">2kg - $15</option>
+        <option value="5kg">5kg - $30</option>
+        <option value="10kg">10kg - $55</option>
+      </select>
+      <form>
+        <label for="qty3">Qty:</label>
+        <input type="number" id="qty3" value="1" min="1">
+        <button type="submit">Add to Cart</button>
+      </form>
+    </article>
+
+    <article>
+      <img src="food_3.jpg" alt="Purepet Chicken & Vegetable Dog Food">
+      <h3>Purepet Chicken & Vegetable Dog Food</h3>
+      <p class="price">Price: $30</p>
+      <label for="product4">Choose Size:</label>
+      <select id="product4">
+        <option value="2kg">2kg - $15</option>
+        <option value="5kg">5kg - $30</option>
+        <option value="10kg">10kg - $55</option>
+      </select>
+      <form>
+        <label for="qty4">Qty:</label>
+        <input type="number" id="qty4" value="1" min="1">
+        <button type="submit">Add to Cart</button>
+      </form>
+    </article>
+  </section>
+</body>
+</html>
